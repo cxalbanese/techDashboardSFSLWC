@@ -28,9 +28,72 @@
         <members>*</members>
         <name>LightningComponentBundle</name>
     </types>
-    <types>
+        <types>
+        <members>*</members>
+        <name>PermissionSet</name>
+    </types><types>
         <members>*</members>
         <name>StaticResource</name>
     </types>
-    <version>56.0</version>
+    <types>
+        <members>Opportunity.Created_by_me__c</members>
+        <name>CustomField</name>
+    </types> 
+    <types> 
+        <members>Opportunity.My_Open_Opportunities</members>
+        <members>Opportunity.My_Open_or_Won_Opportunities</members> 
+        <members>Opportunity.My_Won_Opportunities</members>  
+        <members>ServiceAppointment.Assigned_to_me_and_open</members>  
+        <name>ListView</name> 
+    </types> 
+    <types>
+      <members>ContractWorkOrders</members>
+      <members>DashboardTitle</members>
+      <members>OpenServiceAppointments</members>
+      <members>OpportunitiesCreated</members>
+      <members>WorkOrdersNone</members>
+      <members>OpportunitiesNone</members>
+      <members>OpportunitiesOpen</members>
+      <members>OpportunitiesWon</members>
+      <members>OpportunityDetailsTitle</members>
+      <members>OpportunityTitle</members>
+      <members>ProjectWorkOrders</members>
+      <members>ServiceAppointmentTitle</members>
+      <members>SpotWorkOrders</members>
+      <members>UserLastLocationDate</members>
+      <members>UserName</members>
+      <members>UserTitle</members>
+      <members>WorkOrderTitle</members>
+      <members>WorkOrderDetailsTitle</members>
+      <members>WorkOrdersAssigned</members>
+      <members>ServiceAppointmentTitle</members>
+      <members>SADetailsTitle</members>
+      <members>ServiceAppointmentsAssigned</members>
+      <members>TimeSheetEntryDetailsTitle</members>
+      <members>TimeSheetEntriesNone</members>
+      <members>Monday</members>
+      <members>Tuesday</members>
+      <members>Wednesday</members>
+      <members>Thursday</members>
+      <members>Friday</members>
+      <members>Saturday</members>
+      <members>Sunday</members>
+      <members>Total</members>
+      <members>Burden</members>
+      <members>Straight</members>
+      <members>Overtime</members>
+      <members>TimeSheetSummaryTitle</members>
+      <members>TimeSheetSummarySubtitle</members>
+      <members>Back</members>
+      <name>CustomLabel</name>
+    </types>
+    <types>       
+    <members>Dashboard</members>   
+    <name>QuickAction</name>  
+    </types>
+    <types>
+        <members>techDashboard</members>
+        <name>BriefcaseDefinition</name>
+    </types>
+    <version>55.0</version>
 </Package>

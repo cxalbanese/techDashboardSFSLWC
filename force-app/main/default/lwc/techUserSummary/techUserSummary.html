@@ -1,0 +1,22 @@
+<template>
+    <template if:true={srData}>
+      <lightning-card title={labels.customlabelUserTitle} icon-name="standard:service_resource">
+        <lightning-layout>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+              <div class="header-column">
+                  <p class = "field-title" title="UserName">{labels.customlabelUserName}</p>
+                  <p>{techName}</p>
+              </div>
+          </lightning-layout-item>   
+          <lightning-layout-item flexibility="auto" padding="around-small">
+            <div class="header-column">
+              <p class = "field-title" title="LastLocateDate">{labels.customlabelUserLastLocationDate}</p>
+                <p><lightning-formatted-date-time value={techLastDate} year="2-digit" month="short" day="2-digit" hour="numeric"
+                  minute="numeric" weekday="long"></lightning-formatted-date-time></p>
+            </div>
+        </lightning-layout-item>    
+        </lightning-layout>
+      </lightning-card>
+    </template>
+    <template if:true={error}> Error: {error.body.message} </template>
+  </template>

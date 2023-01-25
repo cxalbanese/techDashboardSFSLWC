@@ -1,0 +1,70 @@
+<template>
+  <lightning-card icon-name="utility:chevronleft">
+    <h1 slot="title">{labels.customlabelBackTitle}</h1> 
+  </lightning-card>
+    <lightning-card icon-name="standard:timesheet_entry">
+      <h1 slot="title">{labels.customlabelTimeSheetEntryDetailsTitle}</h1>
+      <template if:false={hasRecords}>
+        <div class="slds-var-p-around_small">
+          {labels.customlabelTimeSheetEntriesNone}
+        </div>
+      </template>
+      <template if:true={hasRecords}>
+      <table
+          class="slds-table slds-table_cell-buffer slds-table_fixed-layout slds-max-medium-table_stacked-horizontal slds-table_bordered"
+        > 
+        <thead>
+          <!--<tr class="slds-line-height_reset">-->
+            <tr >
+              <th
+                class="tableHeaders"
+                scope="col">
+                {timesheetnumberlabel}
+            </th>            
+            <th
+                class="tableHeaders"
+                scope="col">
+                {timesheetentrynumberlabel}
+            </th>
+            <th
+                class="tableHeaders"
+                scope="col">
+                {starttimelabel}
+            </th>
+            <th
+                class="tableHeaders"
+                scope="col">
+                {endtimelabel}
+            </th>
+            <th
+                class="tableHeaders"
+                scope="col">
+                {typelabel}
+            </th>
+        </tr>
+        </thead>              
+        <tbody> 
+            <template for:each={tseData} for:item="row">
+                <tr key={row.id}>
+                    <td>{tsNumber}</td>
+                    <td>{row.fields.TimeSheetEntryNumber.value}</td>
+                    <td><lightning-formatted-date-time value={row.fields.StartTime.value}      
+                        year="numeric"
+                        month="numeric"
+                        day="numeric"
+                        hour="2-digit"
+                        minute="2-digit"></lightning-formatted-date-time></td>
+                        <td><lightning-formatted-date-time value={row.fields.EndTime.value}      
+                            year="numeric"
+                            month="numeric"
+                            day="numeric"
+                            hour="2-digit"
+                            minute="2-digit"></lightning-formatted-date-time></td>
+                    <td>{row.fields.Type.value}</td>
+                </tr>
+              </template>            
+        </tbody> 
+        </table>
+      </template>
+      </lightning-card>
+    </template>

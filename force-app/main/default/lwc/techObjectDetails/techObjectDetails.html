@@ -1,0 +1,70 @@
+<template>
+  <lightning-card icon-name="utility:chevronleft">
+    <h1 slot="title">{backTitle}</h1> 
+  </lightning-card>
+  <lightning-card icon-name={iconName}>
+    <h1 slot="title">{titleLabel}</h1>
+    <div class="slds-text-title_caps slds-var-p-around_small">{subtitleLabel}</div>
+    <template if:false={hasRecords}>
+      <div class="slds-var-p-around_small">
+        {noRecordsLabel}
+      </div>
+    </template>
+    <template if:true={hasRecords}>
+      <table
+      class="slds-table slds-table_cell-buffer slds-max-medium-table_stacked slds-table_bordered"
+    >
+      <thead>
+        <tr class="slds-line-height_reset">
+          <template for:each={columns} for:item="col" for:index="colIndex">
+            <th
+              id={col.fieldName}
+              data-id={col.fieldName}
+              key={col.label}
+              class="tableHeaders"
+              scope="col"
+            >
+              {col.label}
+            </th>
+          </template>
+        </tr>
+      </thead>              
+      <tbody>
+        <template for:each={rows} for:item="row" for:index="rowIndex">
+          <tr key={row.Id} data-record={row.Id}>
+            <template
+              for:each={row.cells}
+              for:item="cell"
+              for:index="cellIndex"
+            >
+               <td
+              key={cell.fieldApiName}
+              data-field-api-name={cell.fieldApiName}
+              data-label={cell.label}
+            >
+              <template if:true={cell.isCurrency}>
+                <div>
+                      <lightning-formatted-number value={cell.value} format-style="currency" currency-code={currency} currency-display-as="symbol" minimum-fraction-digits="0" ></lightning-formatted-number>
+                </div>
+                </template>
+              <template if:true={cell.isDateTime}>
+                    <div><lightning-formatted-date-time value={cell.value}></lightning-formatted-date-time>
+                    </div>
+              </template>
+              <template if:true={cell.isDate}>
+                <div><lightning-formatted-date-time value={cell.value}></lightning-formatted-date-time>
+                </div>
+              </template>                     
+                <template if:true={cell.isAllOtherTypes}>
+                <div>{cell.value}
+                </div>
+                </template>
+              </td>
+            </template>
+          </tr>
+        </template>
+      </tbody>
+      </table>
+    </template>
+    </lightning-card>
+  </template>

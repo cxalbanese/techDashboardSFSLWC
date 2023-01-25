@@ -1,0 +1,56 @@
+<template>
+    <lightning-card icon-name="standard:timesheet_entry">
+      <h1 slot="title">{labels.customlabelTitle}</h1>
+      <lightning-layout>
+        <lightning-layout-item flexibility="auto" padding="around-small" class="field-title">
+            {labels.customlabelSubtitle} 
+        </lightning-layout-item>
+      </lightning-layout>
+      <lightning-layout multiple-rows="true">
+        <lightning-layout-item flexibility="auto" padding="around-small"  size="12" small-device-size="12" medium-device-size="6" large-device-size="3">
+            <div class="header-column">
+                <p class = "field-title" title="UserName">{labels.customlabelStraight}</p>
+                <p class = "field-value"><lightning-formatted-number value={straight} format-style="decimal" minimum-fraction-digits="2" maximum-fraction-digits="2"></lightning-formatted-number></p>
+            </div>
+        </lightning-layout-item>   
+        <lightning-layout-item flexibility="auto" padding="around-small" size="12" small-device-size="12" medium-device-size="6" large-device-size="3">
+            <div class="header-column">
+                <p class = "field-title" title="UserName">{labels.customlabelOvertime}</p>
+                <p class = "field-value"><lightning-formatted-number value={overtime} format-style="decimal" minimum-fraction-digits="2" maximum-fraction-digits="2"></lightning-formatted-number></p>
+            </div>
+        </lightning-layout-item>           
+        <lightning-layout-item flexibility="auto" padding="around-small"  size="12" small-device-size="12" medium-device-size="6" large-device-size="3">
+            <div class="header-column">
+                <p class = "field-title" title="UserName">{labels.customlabelBurden}</p>
+                <p class = "field-value"><lightning-formatted-number value={burden} format-style="decimal" minimum-fraction-digits="2" maximum-fraction-digits="2"></lightning-formatted-number></p>
+            </div>
+        </lightning-layout-item>   
+        <lightning-layout-item class="custom-box" flexibility="auto" padding="around-small" size="12"  small-device-size="12" medium-device-size="6" large-device-size="3">
+            <div class="header-column">
+                <p class = "field-title" title="UserName">{labels.customlabelTotal}</p>
+                <p class = "field-value"><lightning-formatted-number value={total} format-style="decimal" minimum-fraction-digits="2" maximum-fraction-digits="2"></lightning-formatted-number></p>
+            </div>
+        </lightning-layout-item>  
+      </lightning-layout  >
+      <lightning-layout multiple-rows="true" class="slds-grid slds-gutters slds-grid_align-spread" >
+        <lightning-layout-item flexibility="auto" padding="around-small" for:each={rows} for:item="row" key={row.id} size="12"  small-device-size="12" medium-device-size="6" large-device-size="1"  >
+        <div class="slds-size_1-of-7">
+            <div class="field-label">
+                <!-- <span class="slds-align_absolute-center">{row.label}</span> -->
+                <span>{row.label}</span>
+            </div>
+            <div class="field-value">
+                <span><lightning-formatted-number value={row.value} format-style="decimal" minimum-fraction-digits="2" maximum-fraction-digits="2"></lightning-formatted-number></span>
+            </div>
+        </div>
+        </lightning-layout-item>
+    </lightning-layout > 
+    <!-- <lightning-layout horizontal-align="spread" multiple-rows="true" >
+        <lightning-layout-item padding="around-small" for:each={rows} for:item="row" key={row.id} class="custom-box1 slds-col slds-size_1-of-7" >
+            <div  class="field-value">
+                <span class="slds-align_absolute-center"><lightning-formatted-number value={row.value} format-style="decimal" minimum-fraction-digits="2" maximum-fraction-digits="2"></lightning-formatted-number></span>
+             </div>
+            </lightning-layout-item>
+    </lightning-layout>  -->
+    </lightning-card>
+  </template>

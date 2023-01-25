@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Back</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Navigation icon for back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>Burden</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Burden label</shortDescription>
+        <value>Burden</value>
+    </labels>
+    <labels>
+        <fullName>ContractWorkOrders</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Contract Work Order</shortDescription>
+        <value>Battery</value>
+    </labels>
+    <labels>
+        <fullName>DashboardTitle</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Main Page Title</shortDescription>
+        <value>Technician Dashboard</value>
+    </labels>
+    <labels>
+        <fullName>Friday</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Friday label</shortDescription>
+        <value>Fri</value>
+    </labels>
+    <labels>
+        <fullName>Monday</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Monday label</shortDescription>
+        <value>Mon</value>
+    </labels>
+    <labels>
+        <fullName>OpenServiceAppointments</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Open Service Appointments</shortDescription>
+        <value>Open Service Appointments</value>
+    </labels>
+    <labels>
+        <fullName>OpportunitiesCreated</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunities that I have Created</shortDescription>
+        <value>Opportunities that I have Created</value>
+    </labels>
+    <labels>
+        <fullName>OpportunitiesNone</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>There are no open or won opportunities for you.</shortDescription>
+        <value>There are no open or won opportunities for you.</value>
+    </labels>
+    <labels>
+        <fullName>OpportunitiesOpen</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Open Opportunities</shortDescription>
+        <value>Open Opportunities</value>
+    </labels>
+    <labels>
+        <fullName>OpportunitiesWon</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Won Opportunities</shortDescription>
+        <value>Won Opportunities</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityDetailsTitle</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Details Section Title</shortDescription>
+        <value>Opportunity Details</value>
+    </labels>
+    <labels>
+        <fullName>OpportunityTitle</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Opportunity Section Title</shortDescription>
+        <value>Opportunities</value>
+    </labels>
+    <labels>
+        <fullName>Overtime</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Overtime label</shortDescription>
+        <value>Overtime</value>
+    </labels>
+    <labels>
+        <fullName>ProjectWorkOrders</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Project Work Order</shortDescription>
+        <value>Maintenance</value>
+    </labels>
+    <labels>
+        <fullName>SADetailsTitle</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Service Appointment Details Section Title</shortDescription>
+        <value>Service Appointment Details</value>
+    </labels>
+    <labels>
+        <fullName>Saturday</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Saturday label</shortDescription>
+        <value>Sat</value>
+    </labels>
+    <labels>
+        <fullName>ServiceAppointmentTitle</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Service Appointment Section Title</shortDescription>
+        <value>Service Appointments</value>
+    </labels>
+    <labels>
+        <fullName>ServiceAppointmentsAssigned</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Service Appointments assigned to me</shortDescription>
+        <value>Service Appointments assigned to me</value>
+    </labels>
+    <labels>
+        <fullName>ServiceAppointmentsNone</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>There are no service appointments for you.</shortDescription>
+        <value>There are no service appointments for you.</value>
+    </labels>
+    <labels>
+        <fullName>SpotWorkOrders</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Spot Work Order</shortDescription>
+        <value>Inspection</value>
+    </labels>
+    <labels>
+        <fullName>Straight</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Straight label</shortDescription>
+        <value>Straight</value>
+    </labels>
+    <labels>
+        <fullName>Sunday</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Sunday label</shortDescription>
+        <value>Sun</value>
+    </labels>
+    <labels>
+        <fullName>Thursday</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Thursday label</shortDescription>
+        <value>Thu</value>
+    </labels>
+    <labels>
+        <fullName>TimeSheetEntriesNone</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>There are no time sheet entries for you.</shortDescription>
+        <value>There are no time sheet entries for you.</value>
+    </labels>
+    <labels>
+        <fullName>TimeSheetEntryDetailsTitle</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Time Sheet Entry Details Section Title</shortDescription>
+        <value>Time Sheet Entries</value>
+    </labels>
+    <labels>
+        <fullName>TimeSheetSummarySubtitle</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Time Sheet Summary Subtitle</shortDescription>
+        <value>Hours Entered This Week</value>
+    </labels>
+    <labels>
+        <fullName>TimeSheetSummaryTitle</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Time Sheet Summary Title</shortDescription>
+        <value>Summary of Time</value>
+    </labels>
+    <labels>
+        <fullName>Total</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Total label</shortDescription>
+        <value>Total</value>
+    </labels>
+    <labels>
+        <fullName>Tuesday</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Tuesday label</shortDescription>
+        <value>Tue</value>
+    </labels>
+    <labels>
+        <fullName>UserLastLocationDate</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>User Last Location Date</shortDescription>
+        <value>Last Location Date</value>
+    </labels>
+    <labels>
+        <fullName>UserName</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>User Name</shortDescription>
+        <value>User Name</value>
+    </labels>
+    <labels>
+        <fullName>UserTitle</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>User Section Title</shortDescription>
+        <value>User</value>
+    </labels>
+    <labels>
+        <fullName>Wednesday</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Wednesday label</shortDescription>
+        <value>Wed</value>
+    </labels>
+    <labels>
+        <fullName>WorkOrderDetailsTitle</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Work Order Details Section Title</shortDescription>
+        <value>Work Order Details</value>
+    </labels>
+    <labels>
+        <fullName>WorkOrderTitle</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Work Order Section Title</shortDescription>
+        <value>Work Orders by Work Type</value>
+    </labels>
+    <labels>
+        <fullName>WorkOrdersAssigned</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Work Orders assigned to me</shortDescription>
+        <value>Work Orders assigned to me</value>
+    </labels>
+    <labels>
+        <fullName>WorkOrdersNone</fullName>
+        <categories>techDashboard</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>There are no work orders for you.</shortDescription>
+        <value>There are no work orders for you.</value>
+    </labels>
+    <labels>
+        <fullName>ers_CancelButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>ers_ClearFilterAction</fullName>
+        <categories>actions</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clear Filter</shortDescription>
+        <value>Clear Filter</value>
+    </labels>
+    <labels>
+        <fullName>ers_ClearSelectionButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clear Selection</shortDescription>
+        <value>Clear Selection</value>
+    </labels>
+    <labels>
+        <fullName>ers_ColumnHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Column</shortDescription>
+        <value>Column</value>
+    </labels>
+    <labels>
+        <fullName>ers_FilterHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filter</shortDescription>
+        <value>Filter</value>
+    </labels>
+    <labels>
+        <fullName>ers_LabelHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label</shortDescription>
+        <value>Label</value>
+    </labels>
+    <labels>
+        <fullName>ers_SaveButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>ers_SetFilterAction</fullName>
+        <categories>actions</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Set Filter</shortDescription>
+        <value>Set Filter</value>
+    </labels>
+    <labels>
+        <fullName>fsc_AccessLevel</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccessLevel</shortDescription>
+        <value>Access Level</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Back</fullName>
+        <categories>Buttons,Filters,Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ButtonIsNotSupportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ButtonIsNotSupportedMessage</shortDescription>
+        <value>Following buttons are note supported:</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ConditionLogicHelpText</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConditionLogicHelpText</shortDescription>
+        <value>Use parentheses, AND, OR, and NOT to customize the logic. For example, if you enter “(1 AND 2 AND 3) OR 4”, the flow evaluates whether the first three conditions are true or only the fourth condition is true.</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Delete</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>fsc_FieldIsNotSupportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FieldIsNotSupportedMessage</shortDescription>
+        <value>Following fields are not supported:</value>
+    </labels>
+    <labels>
+        <fullName>fsc_FieldTypeNotSuportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fsc_FieldTypeNotSuportedMessage</shortDescription>
+        <value>You provided an unsupported value for the DataTypeFilter input on Object and Field Picker. Currently the only supported value is ’picklist’</value>
+    </labels>
+    <labels>
+        <fullName>fsc_For</fullName>
+        <categories>Buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>For</shortDescription>
+        <value>For</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Key_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Key Label</shortDescription>
+        <value>Key</value>
+    </labels>
+    <labels>
+        <fullName>fsc_LackingPermissions</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LackingPermissions</shortDescription>
+        <value>You don\&apos;t have the proper permissions for ths action</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ManagerEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ManagerEmptyMessage</shortDescription>
+        <value>&quot;Manager APEX Class&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_MultipleGroupsForRole</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MultipleGroupsForRole</shortDescription>
+        <value>There are multiple groups for that role</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Name</fullName>
+        <categories>quicklinks, Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>fsc_NonePicklistValueLabel</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NonePicklistValueLabel</shortDescription>
+        <value>-- None --</value>
+    </labels>
+    <labels>
+        <fullName>fsc_OWDReadWrite</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OWDReadWrite</shortDescription>
+        <value>Sharing Settings must be private or public read/write to enable manual sharing</value>
+    </labels>
+    <labels>
+        <fullName>fsc_OwnerAdminModify</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OwnerAdminModify</shortDescription>
+        <value>Only the record owner or administrators can modify permissions</value>
+    </labels>
+    <labels>
+        <fullName>fsc_PublicGroups</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PublicGroups</shortDescription>
+        <value>Public Groups</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Queues</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Queues</shortDescription>
+        <value>Queues</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Read</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Read</shortDescription>
+        <value>Read</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ReadWrite</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ReadWrite</shortDescription>
+        <value>Read / Write</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Reason</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reason</shortDescription>
+        <value>Reason</value>
+    </labels>
+    <labels>
+        <fullName>fsc_RelatedUsers</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RelatedUsers</shortDescription>
+        <value>Related Users</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Roles</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Roles</shortDescription>
+        <value>Roles</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Search</fullName>
+        <categories>Actions,Buttons,quicklinks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search in</shortDescription>
+        <value>Search in</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SearchFor</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SearchFor</shortDescription>
+        <value>For</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SetAccessLevel</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SetAccessLevel</shortDescription>
+        <value>Set Access Level</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedAddCapabilitiesEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedAddCapabilitiesEmptyMessage</shortDescription>
+        <value>&quot;Add Capabilities&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedButtonsEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedButtonsEmptyMessage</shortDescription>
+        <value>&quot;Supported Buttons&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedEditCapabilitiesEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedEditCapabilitiesEmptyMessage</shortDescription>
+        <value>&quot;Edit Capabilities&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_TooManyResultsMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TooManyResultsMessage</shortDescription>
+        <value>Your search found more than 200 results.  Keep typing to make it more specific</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Type</fullName>
+        <categories>Buttons,Filters,Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Type</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>fsc_UserOrGroup</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserOrGroup</shortDescription>
+        <value>User Or Group</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Users</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Users</shortDescription>
+        <value>Users</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Value_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Value Label</shortDescription>
+        <value>Value</value>
+    </labels>
+</CustomLabels>

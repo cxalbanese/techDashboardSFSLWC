@@ -1,0 +1,36 @@
+<template>
+    <template if:true={WOData}>
+      <lightning-card icon-name="standard:work_order">
+        <h1 slot="title">{labels.customlabelWorkOrderTitle}</h1>
+        <lightning-layout>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+              <div class="header-column">
+                <p class = "field-title" title="TotalWO">Open Work Orders</p>
+                  <p class="field-value">{numWOs}</p>
+              </div>
+          </lightning-layout-item>  
+      </lightning-layout>
+          <lightning-layout>
+            <lightning-layout-item flexibility="auto" padding="around-small">
+              <div class="header-column">
+                <p class = "field-title" title="wt1WOs">{wt1FieldLabel}</p>
+                  <p class="field-value">{wt1Num}</p>
+              </div>
+          </lightning-layout-item> 
+          <lightning-layout-item flexibility="auto" padding="around-small" if:true={wt2Available}>
+            <div class="header-column">
+              <p class = "field-title" title="wt2WOs">{wt2FieldLabel}</p>
+                <p class="field-value">{wt2Num}</p>
+            </div>
+        </lightning-layout-item>         
+        <lightning-layout-item flexibility="auto" padding="around-small" if:true={wt3Available}>
+          <div class="header-column">
+            <p class = "field-title" title="SpotWOs">{wt3FieldLabel}</p>
+              <p class="field-value">{wt3Num}</p>
+          </div>
+        </lightning-layout-item>     
+        </lightning-layout>
+      </lightning-card>
+    </template>
+    <template if:true={error}> Error: {error.body.message}</template>
+    </template>
