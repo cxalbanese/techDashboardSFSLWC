@@ -1,3 +1,18 @@
+# Installation steps
+1. first upload CustomLabels.labels-meta.xml
+2. deploy content in package.xml 
+3. assign perm set called techDashboard to Alan and Admin
+4. assign Global Action called Dashboard to the publisher layout assigned to Alan
+5. Add the value "Overtime" and "Travel" to picklist field TimeSheetEntry.Type
+6. Create and assign a few work orders/sa of various work types to Alan
+7. Assign briefcase called techDashboard to Alan
+8. log in to Alan in laptop and create a few open and few closed won opportunities
+9. Create a time sheet owned by Alan for current week (Su-Sa)
+10. Enter a variety of time sheet entries with a variety of types
+
+
+
+
 # Salesforce DX Project: Next Steps
 
 Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
