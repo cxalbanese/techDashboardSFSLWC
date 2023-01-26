@@ -5,6 +5,11 @@
         <enabled>true</enabled>
     </classAccesses>
     <description>permissions to apex classes for technician dashboard</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.Created_by_me__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>techDashboard</label>
 </PermissionSet>
