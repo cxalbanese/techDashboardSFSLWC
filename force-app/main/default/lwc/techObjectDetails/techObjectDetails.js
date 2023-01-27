@@ -44,7 +44,6 @@ export default class TechObjectDetails extends LightningElement {
             this.objectLabelPlural = data.labelPlural;       
             if (data.fields) {
                 this.objectFields = data.fields;
-              //  this.recordTypeId = data.defaultRecordTypeId;
               }           
         }
         else if (error) {console.log(error);}
@@ -54,7 +53,7 @@ export default class TechObjectDetails extends LightningElement {
     @wire(getListUi,{
         objectApiName : "$objectName", 
         listViewApiName: "$listViewName",        
-        pageSize: 10,
+        pageSize: 50,
         pageToken: '$pageToken',
         sortBy: "$sortFieldName"})
     callback({data, error}) {

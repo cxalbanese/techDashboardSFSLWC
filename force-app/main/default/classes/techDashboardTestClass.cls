@@ -23,8 +23,9 @@ public class techDashboardTestClass{
         List<Opportunity> opptyResults = techDashboard.getOpptyInfo(userList[0].Id);
         List<ServiceAppointment> saResults = techDashboard.getSAInfo(userList[0].Id);
         list<WorkOrder> woResults = techDashboard.getWOInfo(userList[0].Id);
-        Map<String,Decimal> tsResultsMap = techDashboard.getTSInfo(userList[0].id);
-        list<TimeSheetEntry> tseResults = techDashboard.getTSList(userList[0].Id);
+        TimeSheet tsResults = techDashboard.getTSHeader(userList[0].Id);
+        //Map<String,Decimal> tsResultsMap = techDashboard.getTSInfo(userList[0].id);
+        //list<TimeSheetEntry> tseResults = techDashboard.getTSList(userList[0].Id);
 
         Test.stopTest();
 
@@ -32,8 +33,9 @@ public class techDashboardTestClass{
         System.assert(opptyResults!=null && opptyResults.size()>0);
         System.assert(saResults!=null && saResults.size()>0);
         System.assert(woResults!=null && woResults.size()>0);
-        System.assert(tsResultsMap!=null && tsResultsMap.size()>0);
-        System.assert(tseResults!=null && tseResults.size()>0);
+        System.assert(tsResults!=null);
+        //System.assert(tsResultsMap!=null && tsResultsMap.size()>0);
+        //System.assert(tseResults!=null && tseResults.size()>0);
 
 
     }

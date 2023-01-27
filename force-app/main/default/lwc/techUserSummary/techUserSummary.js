@@ -1,5 +1,4 @@
 import { api, LightningElement, track, wire } from 'lwc';
-import { refreshApex } from '@salesforce/apex';
 import getSRObj from '@salesforce/apex/techDashboard.getSRInfo';
 import techId from '@salesforce/user/Id';
 import customlabelUserTitle from "@salesforce/label/c.UserTitle";

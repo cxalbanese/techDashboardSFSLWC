@@ -1,5 +1,4 @@
 import { api, LightningElement, track, wire } from 'lwc';
-import { refreshApex } from '@salesforce/apex';
 import getSAList from '@salesforce/apex/techDashboard.getSAInfo';
 import techId from '@salesforce/user/Id';
 import customlabelServiceAppointmentTitle from "@salesforce/label/c.ServiceAppointmentTitle";
