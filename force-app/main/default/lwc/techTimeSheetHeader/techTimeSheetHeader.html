@@ -32,7 +32,7 @@
             </div>
         </lightning-layout-item>  
       </lightning-layout  >
-      <lightning-layout multiple-rows="true" class="slds-grid slds-gutters slds-grid_align-spread" >
+      <lightning-layout multiple-rows="true" class="slds-grid slds-gutters slds-grid_align-spread slds-var-p-left_small" >
         <lightning-layout-item flexibility="auto" padding="around-small" for:each={rows} for:item="row" key={row.id} size="12"  small-device-size="12" medium-device-size="6" large-device-size="1"  >
         <div class="slds-size_1-of-7">
             <div class="field-label">
@@ -44,13 +44,6 @@
             </div>
         </div>
         </lightning-layout-item>
-    </lightning-layout > 
-    <!-- <lightning-layout horizontal-align="spread" multiple-rows="true" >
-        <lightning-layout-item padding="around-small" for:each={rows} for:item="row" key={row.id} class="custom-box1 slds-col slds-size_1-of-7" >
-            <div  class="field-value">
-                <span class="slds-align_absolute-center"><lightning-formatted-number value={row.value} format-style="decimal" minimum-fraction-digits="2" maximum-fraction-digits="2"></lightning-formatted-number></span>
-             </div>
-            </lightning-layout-item>
-    </lightning-layout>  -->
+    </lightning-layout >
     </lightning-card>
   </template>

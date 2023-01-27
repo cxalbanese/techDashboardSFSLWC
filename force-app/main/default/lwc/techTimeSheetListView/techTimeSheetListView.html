@@ -10,12 +10,15 @@
         </div>
       </template>
       <template if:true={hasRecords}>
+   <!--     <table
+        class="slds-table slds-table_cell-buffer slds-table_fixed-layout slds-max-medium-table_stacked-horizontal slds-table_bordered" 
+            > -->
       <table
-          class="slds-table slds-table_cell-buffer slds-table_fixed-layout slds-max-medium-table_stacked-horizontal slds-table_bordered"
+          class="slds-table slds-table_cell-buffer slds-max-medium-table_stacked slds-table_bordered"
         > 
         <thead>
-          <!--<tr class="slds-line-height_reset">-->
-            <tr >
+          <tr class="slds-line-height_reset">
+         <!--   <tr > -->
               <th
                 class="tableHeaders"
                 scope="col">
