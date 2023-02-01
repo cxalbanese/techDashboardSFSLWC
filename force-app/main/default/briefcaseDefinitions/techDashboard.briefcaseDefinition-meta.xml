@@ -79,13 +79,6 @@
         <queryScope>Everything</queryScope>
         <recordLimit>500</recordLimit>
         <relatedRules>
-            <briefcaseRuleFilters>
-                <filterOperator>e</filterOperator>
-                <filterSeqNumber>1</filterSeqNumber>
-                <filterValue>false</filterValue>
-                <targetEntityField>IsDeleted</targetEntityField>
-            </briefcaseRuleFilters>
-            <filterLogic>1</filterLogic>
             <isAscendingOrder>false</isAscendingOrder>
             <queryScope>Everything</queryScope>
             <recordLimit>500</recordLimit>
