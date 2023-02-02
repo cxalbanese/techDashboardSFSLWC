@@ -1,5 +1,5 @@
 <template>
-  <lightning-card icon-name="utility:chevronleft">
+  <lightning-card icon-name="utility:chevronleft"  onclick={handleRedirectBack}>
     <h1 slot="title">{labels.customlabelBackTitle}</h1> 
   </lightning-card>
     <lightning-card icon-name="standard:timesheet_entry">
@@ -10,15 +10,11 @@
         </div>
       </template>
       <template if:true={hasRecords}>
-   <!--     <table
-        class="slds-table slds-table_cell-buffer slds-table_fixed-layout slds-max-medium-table_stacked-horizontal slds-table_bordered" 
-            > -->
       <table
           class="slds-table slds-table_cell-buffer slds-max-medium-table_stacked slds-table_bordered"
         > 
         <thead>
           <tr class="slds-line-height_reset">
-         <!--   <tr > -->
               <th
                 class="tableHeaders"
                 scope="col">
@@ -48,7 +44,7 @@
         </thead>              
         <tbody> 
             <template for:each={tseData} for:item="row">
-                <tr key={row.id}>
+                <tr key={row.id} data-recordid={row.id} onclick={redirectToObjectDetails}>
                     <td>{tsNumber}</td>
                     <td>{row.fields.TimeSheetEntryNumber.value}</td>
                     <td><lightning-formatted-date-time value={row.fields.StartTime.value}      

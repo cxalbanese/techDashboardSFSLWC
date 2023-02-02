@@ -2,8 +2,8 @@ import { api, LightningElement, track, wire } from 'lwc';
 import getTS from '@salesforce/apex/techDashboard.getTSHeader';
 import { getRecord, getFieldValue } from 'lightning/uiRecordApi';
 import { getRelatedListRecords } from 'lightning/uiRelatedListApi';
-
 import techId from '@salesforce/user/Id';
+import {NavigationMixin} from 'lightning/navigation';
 import customlabelTimeSheetEntriesNone from "@salesforce/label/c.TimeSheetEntriesNone";
 import customlabelTimeSheetEntryDetailsTitle from "@salesforce/label/c.TimeSheetEntryDetailsTitle";
 import customlabelBackTitle from "@salesforce/label/c.Back";
@@ -19,7 +19,7 @@ import STARTTIME_FIELD from '@salesforce/schema/TimeSheetEntry.StartTime';
 import ENDTIME_FIELD from '@salesforce/schema/TimeSheetEntry.EndTime';
 import TIMESHEETENTRYNUMBER_FIELD from '@salesforce/schema/TimeSheetEntry.TimeSheetEntryNumber';
 
-export default class techTimeSheetListView extends LightningElement {
+export default class techTimeSheetListView extends NavigationMixin(LightningElement) {
     timesheetnumberlabel;
     timesheetentrynumberlabel;
     typelabel;
@@ -30,6 +30,7 @@ export default class techTimeSheetListView extends LightningElement {
         customlabelTimeSheetEntriesNone,
         customlabelBackTitle
     };
+    @api redirectBack;
     @track tseData = [];
     @track errorData;
 
@@ -97,4 +98,17 @@ export default class techTimeSheetListView extends LightningElement {
      get hasRecords() {
         return this.tseData && this.tseData.length > 0;
      }
+     redirectToObjectDetails(event)  {
+       const objid = event.currentTarget.dataset.recordid;
+       const navUrl = `com.salesforce.fieldservice://v1/sObject/${objid}/details`;  
+       this[NavigationMixin.Navigate]({
+         type: 'standard__webPage',
+         attributes: {
+           url: navUrl
+           }
+         });
+     } 
+     handleRedirectBack = () => {
+       this.redirectBack();
+   }
 }

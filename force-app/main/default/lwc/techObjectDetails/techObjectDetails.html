@@ -1,5 +1,5 @@
 <template>
-  <lightning-card icon-name="utility:chevronleft">
+  <lightning-card icon-name="utility:chevronleft" onclick={handleRedirectBack}>
     <h1 slot="title">{backTitle}</h1> 
   </lightning-card>
   <lightning-card icon-name={iconName}>
@@ -31,7 +31,7 @@
       </thead>              
       <tbody>
         <template for:each={rows} for:item="row" for:index="rowIndex">
-          <tr key={row.Id} data-record={row.Id} onselect={handleSelect}>
+          <tr key={row.Id} data-recordid={row.Id} onclick={redirectToObjectDetails}>
             <template
               for:each={row.cells}
               for:item="cell"
@@ -68,15 +68,5 @@
     </template>
     </lightning-card>
     <lightning-layout-item>
-      <!-- delete me - testing-->
-      <template for:each={rows} for:item="row">
-          <c-tech-testing-detail  
-              class="slds-show slds-is-relative"
-              key={row.Id}
-              myrow={row}
-          ></c-tech-testing-detail>
-      </template>
   </lightning-layout-item>
   </template>
-
-  <!-- onselect={handleSelect} -->

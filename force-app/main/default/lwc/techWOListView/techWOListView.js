@@ -1,5 +1,6 @@
 import { api, LightningElement, track, wire } from 'lwc';
 import getWOList from '@salesforce/apex/techDashboard.getWOInfo';
+import {NavigationMixin} from 'lightning/navigation';
 import techId from '@salesforce/user/Id';
 import customlabelWorkOrderTitle from "@salesforce/label/c.WorkOrderTitle";
 import customlabelWorkOrdersNone from "@salesforce/label/c.WorkOrdersNone";
@@ -9,7 +10,8 @@ import WORKTYPE_OBJECT from '@salesforce/schema/WorkType';
 import { getObjectInfo } from 'lightning/uiObjectInfoApi';
 import customlabelBackTitle from "@salesforce/label/c.Back";
 
-export default class techWOListView extends LightningElement {
+export default class techWOListView extends NavigationMixin(LightningElement) {
+    @api redirectBack;
     workordernumberlabel;
     subjectlabel;
     worktypenamelabel;
@@ -64,4 +66,17 @@ export default class techWOListView extends LightningElement {
      get labelworkordernumber() {
         return this.workordernumberlabel;
      }
+     redirectToObjectDetails(event)  {
+       const objid = event.currentTarget.dataset.recordid;
+       const navUrl = `com.salesforce.fieldservice://v1/sObject/${objid}/details`;  
+       this[NavigationMixin.Navigate]({
+         type: 'standard__webPage',
+         attributes: {
+           url: navUrl
+           }
+         });
+     } 
+     handleRedirectBack = () => {
+        this.redirectBack();
+    }
 }

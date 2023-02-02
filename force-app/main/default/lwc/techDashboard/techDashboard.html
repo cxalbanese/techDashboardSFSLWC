@@ -1,37 +1,42 @@
 <template>
-  <lightning-card title={dashboardTitle} icon-name="action:user">
-  </lightning-card>
+  <lightning-card title={dashboardTitle} icon-name="action:user"></lightning-card>
   <c-tech-user-summary if:true={summary}></c-tech-user-summary>
   <c-tech-s-a-summary if:true={summary} onclick={handleSAClick}></c-tech-s-a-summary>
   <c-tech-w-o-summary if:true={summary} onclick={handleWOClick}></c-tech-w-o-summary>
   <c-tech-oppty-summary-list-view if:true={summary} onclick={handleOpptyClick}></c-tech-oppty-summary-list-view>   
-  <c-tech-w-o-list-view if:true={woDetail} onclick={handleWOClick}></c-tech-w-o-list-view> 
-  <c-tech-time-sheet-list-view if:true={tsDetail} onclick={handleTSClick}></c-tech-time-sheet-list-view>    
-
-  <c-tech-object-details if:true={opptyDetail} onclick={handleOpptyClick}    
-  object-name="Opportunity" 
-  list-view-name="My_Open_or_Won_Opportunities" 
-  sort-field-name="Opportunity.IsClosed" 
-  title-label={opptyCreatedTitle} 
-  subtitle-label={opptyDetailsTitle} 
-  no-records-label={opptyNone} 
-  icon-name="standard:opportunity"
+  <c-tech-w-o-list-view 
+    if:true={woDetail} 
+    onclick={handleWOClick} 
+    redirect-back={handleWOClick}
+  ></c-tech-w-o-list-view> 
+  <c-tech-time-sheet-list-view 
+    if:true={tsDetail} 
+    onclick={handleTSClick}   
+    redirect-back={handleTSClick}
+  ></c-tech-time-sheet-list-view>    
+  <c-tech-object-details 
+    if:true={opptyDetail} 
+    onclick={handleOpptyClick}    
+    object-name="Opportunity" 
+    list-view-name="My_Open_or_Won_Opportunities" 
+    sort-field-name="Opportunity.IsClosed" 
+    title-label={opptyCreatedTitle} 
+    subtitle-label={opptyDetailsTitle} 
+    no-records-label={opptyNone} 
+    icon-name="standard:opportunity"
+    redirect-back={handleOpptyClick}
   ></c-tech-object-details>
-
-  <!-- <c-tech-object-details if:true={saDetail} onclick={handleSAClick}  -->
-  <c-tech-object-details if:true={saDetail}  
-  object-name="ServiceAppointment" 
-  list-view-name="Assigned_to_me_and_open" 
-  sort-field-name="ServiceAppointment.AppointmentNumber" 
-  title-label={saTitle} 
-  subtitle-label={saDetailsTitle} 
-  no-records-label={saNone} 
-  icon-name="standard:service_appointment"
+  <c-tech-object-details 
+    if:true={saDetail} 
+    onclick={handleSAClick}
+    object-name="ServiceAppointment" 
+    list-view-name="Assigned_to_me_and_open" 
+    sort-field-name="ServiceAppointment.AppointmentNumber" 
+    title-label={saTitle} 
+    subtitle-label={saDetailsTitle} 
+    no-records-label={saNone} 
+    icon-name="standard:service_appointment"
+    redirect-back={handleSAClick}
   ></c-tech-object-details>
-
-  <c-tech-time-sheet-header 
-  if:true={summary} 
-  onclick={handleTSClick}>
-</c-tech-time-sheet-header>
-  
+  <c-tech-time-sheet-header if:true={summary} onclick={handleTSClick}></c-tech-time-sheet-header>  
 </template>

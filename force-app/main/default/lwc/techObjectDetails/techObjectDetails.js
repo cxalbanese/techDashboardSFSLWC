@@ -1,11 +1,13 @@
 import { api, LightningElement, track, wire } from 'lwc';
 import { getListUi } from 'lightning/uiListApi';
 import { getObjectInfo } from 'lightning/uiObjectInfoApi';
+import {NavigationMixin} from 'lightning/navigation';
 import LOCALE from '@salesforce/i18n/locale';
 import CURRENCY from '@salesforce/i18n/currency';
 import backTitle from "@salesforce/label/c.Back";
 
-export default class TechObjectDetails extends LightningElement {
+export default class TechObjectDetails extends NavigationMixin(LightningElement)  {
+    @api redirectBack;
     @api objectName;
     @api listViewName;
     @api sortFieldName;
@@ -155,5 +157,17 @@ export default class TechObjectDetails extends LightningElement {
     handlePreviousPage(e) {
         this.pageToken = this.previousPageToken;
     }
-    
+    redirectToObjectDetails(event)  {
+      const objid = event.currentTarget.dataset.recordid;
+      const navUrl = `com.salesforce.fieldservice://v1/sObject/${objid}/details`;  
+      this[NavigationMixin.Navigate]({
+        type: 'standard__webPage',
+        attributes: {
+          url: navUrl
+          }
+        });
+    } 
+    handleRedirectBack = () => {
+      this.redirectBack();
+  }
 }

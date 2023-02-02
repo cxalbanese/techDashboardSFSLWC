@@ -1,5 +1,5 @@
 <template>
-  <lightning-card icon-name="utility:chevronleft">
+  <lightning-card icon-name="utility:chevronleft" onclick={handleRedirectBack}>
     <h1 slot="title">{labels.customlabelBackTitle}</h1> 
   </lightning-card>
     <lightning-card icon-name="standard:work_order">
@@ -37,7 +37,7 @@
         </thead>              
         <tbody> 
             <template for:each={WODataCleansed} for:item="row">
-                <tr key={row.Id}>
+                <tr key={row.Id} data-recordid={row.Id} onclick={redirectToObjectDetails}>
                     <td data-label={workordernumberlabel}>{row.WorkOrderNumber}</td>
                     <td data-label={subjectlabel}>{row.Subject}</td>
                     <td data-label={worktypenamelabel}>{row.WorkType.Name}</td>
