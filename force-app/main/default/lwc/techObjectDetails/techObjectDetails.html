@@ -31,7 +31,7 @@
       </thead>              
       <tbody>
         <template for:each={rows} for:item="row" for:index="rowIndex">
-          <tr key={row.Id} data-record={row.Id}>
+          <tr key={row.Id} data-record={row.Id} onselect={handleSelect}>
             <template
               for:each={row.cells}
               for:item="cell"
@@ -67,4 +67,16 @@
       </table>
     </template>
     </lightning-card>
+    <lightning-layout-item>
+      <!-- delete me - testing-->
+      <template for:each={rows} for:item="row">
+          <c-tech-testing-detail  
+              class="slds-show slds-is-relative"
+              key={row.Id}
+              myrow={row}
+          ></c-tech-testing-detail>
+      </template>
+  </lightning-layout-item>
   </template>
+
+  <!-- onselect={handleSelect} -->

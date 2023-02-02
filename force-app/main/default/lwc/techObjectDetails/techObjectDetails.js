@@ -152,7 +152,8 @@ export default class TechObjectDetails extends LightningElement {
         this.pageToken = this.nextPageToken;
       }
     
-      handlePreviousPage(e) {
+    handlePreviousPage(e) {
         this.pageToken = this.previousPageToken;
-      }
+    }
+    
 }

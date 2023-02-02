@@ -7,8 +7,8 @@
   <c-tech-oppty-summary-list-view if:true={summary} onclick={handleOpptyClick}></c-tech-oppty-summary-list-view>   
   <c-tech-w-o-list-view if:true={woDetail} onclick={handleWOClick}></c-tech-w-o-list-view> 
   <c-tech-time-sheet-list-view if:true={tsDetail} onclick={handleTSClick}></c-tech-time-sheet-list-view>    
-  
-  <c-tech-object-details if:true={opptyDetail} onclick={handleOpptyClick} 
+
+  <c-tech-object-details if:true={opptyDetail} onclick={handleOpptyClick}    
   object-name="Opportunity" 
   list-view-name="My_Open_or_Won_Opportunities" 
   sort-field-name="Opportunity.IsClosed" 
@@ -18,7 +18,8 @@
   icon-name="standard:opportunity"
   ></c-tech-object-details>
 
-  <c-tech-object-details if:true={saDetail} onclick={handleSAClick} 
+  <!-- <c-tech-object-details if:true={saDetail} onclick={handleSAClick}  -->
+  <c-tech-object-details if:true={saDetail}  
   object-name="ServiceAppointment" 
   list-view-name="Assigned_to_me_and_open" 
   sort-field-name="ServiceAppointment.AppointmentNumber" 
